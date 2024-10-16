@@ -1,0 +1,176 @@
+.skill-section{
+  width:100%;
+  background-image:url("../../image/portfolio-banner.jpg");
+  background-size:cover;
+  background-position: center;
+  color:#fff;
+  position:relative;
+  z-index: 50;
+}
+.skill-shade{
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.7);
+  padding:40px 80px;
+  z-index:200;
+}
+
+.skill-section h1{
+  font-size:25px;
+  font-weight:400;
+  margin:20px 0;
+  position:relative;
+  color:rgb(28, 234, 234);
+  font-family: "Orbitron";
+}
+.skill-div{
+  display:flex;
+  flex-direction:column;
+  row-gap:10px;
+}
+.skill-div h3{
+  font-size:25px;
+  font-weight:300;
+  margin:10px 0;
+}
+.skill-spin{
+  width:100%;
+  display:flex;
+  overflow:hidden;
+  white-space: no-wrap;
+ }
+.skill-icons-div{
+  padding:20px;
+  margin:0 20px;
+  background:rgb(254, 254, 254);
+  border-radius:20px;
+  z-index:200;
+}
+.skill-icons-div:hover .skill-icons{
+   color:#697565;
+   transform: scale(110%);
+}
+.skill-icons{
+  font-size:50px;
+  transition-duration:0.7s;
+  cursor: pointer;
+  animation-name:scale-an;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.html-logo{
+  color:rgb(235, 182, 9);
+}
+.css-logo{
+  color:rgb(37, 37, 169);
+}
+.js-logo{
+  color:#F3C623;
+}
+.react-logo{
+  color:#0D92F4;
+}
+.bootstrap-logo{
+  color:#640D5F;
+}
+.tailwind-logo{
+  color:#0D92F4;
+}
+.java-logo{
+  color:#FF6500;
+}
+.python-logo{
+  color:#091057;
+}
+.django-logo{
+  color:#185519;
+}
+.oracle-logo{
+  color:#B8001F;
+}
+
+.github-logo{
+  color:#181C14;
+}
+.git-logo{
+  color:#FF6600;
+}
+.pad-logo{
+  color:#4379F2;
+}
+.animation-div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:400px;
+    width:400px;
+    translate: -50% -50%;
+    border-radius:50%;
+    border:2px solid rgb(93, 90, 90);
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    z-index:100;
+    animation:4s spin infinite;
+}
+.animation2-div{
+  position:absolute;
+    top:50%;
+    left:50%;
+    height:250px;
+    width:250px;
+    translate: -50% -50%;
+    border-radius:50%;
+    border:2px solid rgb(64, 115, 115);
+    border-left:1px solid transparent;
+    border-right:1px solid transparent;
+    z-index:100;
+    animation:4s spin2 infinite;
+}
+
+@keyframes spin {
+  to{
+     transform: rotate(0deg);
+  }
+  from{
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  to{
+     transform: rotate(360deg);
+  }
+  from{
+    transform: rotate(0deg);
+  }
+}
+@keyframes scale-an{
+  to{
+    transform: scale(100%);
+  }
+  from{
+    transform: scale(106%);
+  }
+}
+
+
+@media(max-width:780px){
+  .skill-shade{
+    padding:40px;
+  }
+  .skill-spin{
+    justify-content: center;
+    flex-wrap:wrap;
+    row-gap:20px;
+   }
+   .skill-icons-div{
+    padding:12px;
+    margin:0 20px;
+    background:rgb(254, 254, 254);
+    border-radius:20px;
+  }
+   .skill-icons{
+    font-size:35px;
+  }
+  
+}

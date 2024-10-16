@@ -1,0 +1,100 @@
+.about-section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding:40px 80px;
+}
+
+.about-section h1{
+    font-size:30px;
+    font-weight:500;
+    margin:20px 0;
+    position:relative;
+    color:#0F67B1;
+    font-family: "Orbitron";
+}
+.about-contaits{
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+}
+.about-contaits .profile-div h2{
+   margin:10px 0;
+   font-size:20px;
+   font-family: "Orbitron";
+}
+.profile-div p{
+    font-size:17px;
+    font-weight:400;
+    color:#000;
+}
+.about-section > h2{
+    margin:10px 0;
+    font-size:20px;
+}
+.education-div{
+    padding:0px 0px 0px 20px ;
+    border-left:2px solid #181C14;
+}
+.education-div .edu-box{
+    padding:15px;
+    margin:20px 0;
+    position:relative;
+    border-radius:10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: all 0.5s ease-in;
+}
+.education-div .edu-box:hover{
+    background-color: #181C14;
+    color:#fff;
+}
+.education-div .edu-box::before{
+    content:"";
+    position:absolute;
+    right:calc(100% + 13px);
+    top:0;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-color: #181C14;
+    color:#fff;
+    display:flex;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:10px;
+}
+.education-div .edu-box h3{
+    font-size:17px;
+    font-weight:600;
+    margin:10px 0;
+    font-family: "Orbitron";
+}
+.education-div .edu-box ul{
+    list-style: none;
+    padding-left:30px;
+}
+.education-div .edu-box ul li{
+    margin:10px 0;
+}
+.about-icons{
+    color:rgb(24, 105, 105);
+}
+.d-icons{
+    margin-right:10px;
+    color:rgb(36, 76, 76);
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    .about-section{
+        padding:20px;
+    }
+}
