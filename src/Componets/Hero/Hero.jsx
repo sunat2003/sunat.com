@@ -39,7 +39,7 @@ export function Hero() {
             </p>
             <button className="hero-btn">
               <a href={cv} download>
-                Downlord My Resume
+                Download my Resume
               </a>
             </button>
           </div>
