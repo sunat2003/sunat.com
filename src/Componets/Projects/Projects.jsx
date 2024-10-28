@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import pro1 from "../../image/project-1.png";
 import pro2 from "../../image/project-2.png";
@@ -8,6 +8,8 @@ import pro5 from "../../image/project-5.png";
 import pro6 from "../../image/project-6.png";
 import pro7 from "../../image/project-7.png";
 import pro8 from "../../image/project-8.png";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 var projects = [
   {
@@ -88,13 +90,16 @@ var projects = [
 ];
 
 export function Project() {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   return (
     <section id="project" className="project-section">
-      <h1>My Work</h1>
+      <h1 data-aos="fade-up">My Work</h1>
       <hr />
       <div className="projects-div">
         {projects.map((data) => (
-          <div key={data.id} className="each-project">
+          <div data-aos="fade-up" key={data.id} className="each-project">
             <div className="left-div">
               <h3>{data.name}</h3>
               <p><span>Tech:</span> {data.tech}</p>
