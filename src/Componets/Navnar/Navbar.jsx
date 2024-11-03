@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.css";
 import { IoMenuOutline } from "react-icons/io5";
 import userPhoto from "../../image/babul photo.jpg";
@@ -21,7 +21,7 @@ export function Navbar() {
       {
         right:"0px"
       }
-    )
+    );
   }
   function handleNavCloseClick(){
     setTogglestyle(

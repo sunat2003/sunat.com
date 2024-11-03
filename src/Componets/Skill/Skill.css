@@ -42,7 +42,7 @@
 .skill-icons-div{
   padding:20px;
   margin:0 20px;
-  background:rgb(254, 254, 254);
+  background:transparent;
   border-radius:20px;
   z-index:200;
 }
@@ -51,7 +51,7 @@
    transform: scale(110%);
 }
 .skill-icons{
-  font-size:50px;
+  font-size:60px;
   transition-duration:0.7s;
   cursor: pointer;
   animation-name:scale-an;
@@ -91,7 +91,7 @@
 }
 
 .github-logo{
-  color:#181C14;
+  color:#fff;
 }
 .git-logo{
   color:#FF6600;
@@ -166,11 +166,11 @@
    .skill-icons-div{
     padding:12px;
     margin:0 20px;
-    background:rgb(254, 254, 254);
+    background:transparent;
     border-radius:20px;
   }
    .skill-icons{
-    font-size:35px;
+    font-size:40px;
   }
   
 }

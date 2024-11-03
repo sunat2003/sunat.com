@@ -49,7 +49,7 @@ export function About() {
             </ul>
           </div>
           <div data-aos="fade-up" className="edu-box">
-            <h3>Graguation</h3>
+            <h3>Graduation</h3>
             <ul>
               <li>
                 {" "}
