@@ -8,7 +8,7 @@
     top:0px;
     left:0px;
     right:0px;
-    background-color: #1A1A1D;
+    background-color:#000;
     z-index:999;
     box-shadow:0px 0px 20zpx aqua;
     box-shadow:0px 0px 10px #000;
@@ -79,7 +79,7 @@
     position:absolute;
     top:0px;
     right:-80%;
-    background-color:#1A1A1D;
+    background-color:#000;
     height:100vh;
     display:flex;
     flex-direction: column;
